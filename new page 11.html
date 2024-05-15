@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    input<input id="p" type="text">
+    input<input id="d" type="text">
+    output<input id="e" type="text">
+
+    <label for="a">Add</label><input id="a" type="button" onclick="f('a')" value="add">
+    <label for="s">Substract</label><input id="s" type="button" onclick="f('s')" value="sub">
+    <label for="a1">multiplie</label><input id="a1" type="button" onclick="f('a1')" value="multipli">
+
+
+    <script>
+        function f(option){
+
+            // function bracket ke andar likha hua word variable hota hai jaisa ki niche hai //
+        // input tag ke type me agar button ka use karte hai toh yaad rahe  function bracket me option likhte hai 
+        // par yeh tab use karte hai jab ek se jyada input tag ke ander button ka use karte hai isko parameter pass karna kehte hai
+        
+
+           var x= document.getElementById("p").value;
+           var y= document.getElementById("d").value;
+         
+
+           x=Number(x);
+           y=Number(y);
+           
+           let total=x+y;
+        
+//  yaha par function bracket ke undar word ka hi use kiya gaya hai jo ki ek variable hai //
+
+
+          if(option=="a"){
+          total=x+y;
+        }
+        else if(option=="s"){
+            total=x-y;
+        }
+        else if(option=="a1"){
+            total=x*y;
+        }
+        document.getElementById("e").value=total;
+         
+          
+          console.log("hi");
+          console.log(Add.value);
+          console.log(Substract.value);
+          console.log(multiplie.value);
+
+
+        
+          
+
+
+
+        }
+    </script>
+
+</body>
+</html>

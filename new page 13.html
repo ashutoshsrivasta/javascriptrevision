@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    price<input id="price" type="text">
+    discount<input id="discount" type="text">
+    output<input id="output" type="text">
+
+    <input type="button" onclick="f()" value="submit">
+
+    <script>
+        function f(){
+           
+            let price=document.getElementById("price").value;
+            let discount=document.getElementById("discount").value;
+           
+            
+           
+            price=Number(price);
+            discount=Number(discount);
+    
+
+            output=(100-discount)*price/100.0
+
+            console.log("hi");
+
+
+            document.getElementById("output").value=output;
+
+
+        }
+    </script>
+</body>
+</html>

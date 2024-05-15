@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.f{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    name<input id="name" type="text">
+    roll no<input id="rollno" type="text">
+    phy<input id="phy" type="text">
+    che<input id="che" type="text">
+    math<input id="math" type="text">
+
+    total<input id="total" type="text">
+
+    result<input id="result" type="text">
+   
+    percent<input id="output" type="text">
+
+    division<input id="division" type="text">
+
+    <input type="button" onclick="f()" value="submit">
+
+    <script>
+        function f(){
+            let phy=document.getElementById("phy").value;
+            let che=document.getElementById("che").value;
+            let math=document.getElementById("math").value;
+
+            phy=Number(phy);
+            che=Number(che);
+            math=Number(math);
+            
+            
+            let total=phy+che+math;
+            let percentage=total/3;
+            let result;
+            let division;
+          
+            
+
+ console.log(phy);
+ console.log(che);
+ console.log(math);
+           if(phy<40){
+            console.log("phy fail");
+            document.getElementById("phy").classList.add("f");
+           }
+           else{
+            console.log("phy Pass");
+            document.getElementById("phy").classList.remove("f");
+           }
+           if(che<40){
+            document.getElementById("che").classList.add("f");
+           }
+           else{
+            document.getElementById("che").classList.remove("f")
+           }
+           
+           if(math<40){
+            document.getElementById("math").classList.add("f");
+           }
+           else{
+            document.getElementById("math").classList.remove("f");
+           }
+
+            if(phy<40 || che<40 || math<40){
+            result="fail";
+           }
+           else{
+            result="pass";
+           }
+           if(percentage>=60){
+            division="first division";
+            
+           }
+           else if(percentage>=50){
+           division="second division";
+        }
+        else{
+            division="third division";
+        }
+           console.log(document.getElementById("phy").classList);
+           
+           document.getElementById("output").value=percentage;
+          document.getElementById("total").value=total;
+           document.getElementById("result").value=result;
+           document.getElementById("division").value=division;
+        }
+    </script>
+</body>
+</html>

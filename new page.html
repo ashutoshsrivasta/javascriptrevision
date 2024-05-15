@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <label for="a">First</label> <input id="a" type="radio" name="gender">
+<label for="s">Second</label> <input id="s" type="radio" name="gender">
+
+<label id="d"></label>
+<label id="p"></label>
+
+    <input type="button" onclick="f()" value="submit">
+    <script>
+function f(){
+ var x = document.getElementById("a");
+  var y= document.getElementById("s");
+
+    console.log("hi");
+    console.log(x.checked);
+    console.log(y.checked);
+    
+// yeh browser par print karane ke liye lable tag ka use kiya gaya hai
+    document.getElementById("d").innerHTML=x.checked;
+    document.getElementById("p").innerHTML=y.checked;
+
+}
+    </script>
+</body>
+</html>

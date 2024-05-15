@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input id="Add" type="text">
+    <input id="Substract" type="text">
+    <input id="output" type="text">
+
+    <label for="">Add/Substract</label><input id="choose" type="checkbox">
+    
+
+    <input type="button" onclick="f()" value="submit">
+
+
+    <script>
+        function f(){
+            
+            let x=document.getElementById("Add").value;
+            let y=document.getElementById("Substract").value;
+
+            x=Number(x);
+            y=Number(y);
+
+            let total;
+
+            let add=document.getElementById("choose");
+
+            if(add.checked){
+                total=x+y;
+
+            }
+            else 
+                {total=x-y;
+            }
+            
+
+            console.log("hi");
+            document.getElementById("output").value=total;
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

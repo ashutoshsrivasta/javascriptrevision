@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   input <input id="a" type="text">
+   input <input id="s" type="text">
+   output <input id="p" type="text">
+   
+   <label for="add"></label>Add<input id="add" type="radio" name="option">
+   <label for="subtract"></label>Subtract<input id="subtract" type="radio" name="option">
+
+<input type="button" onclick="f()" value="submit">
+   <script>
+   function f(){
+    let x=document.getElementById("a").value;
+    let y=document.getElementById("s").value;
+
+     x=Number(x);
+     y=Number(y);
+
+     let total;
+
+     let add=document.getElementById("add");
+     let subtract=document.getElementById("subtract");
+
+     if(add.checked){
+        total=x+y;
+     }
+     else if(subtract.checked){
+        total=x-y;
+     }
+
+
+
+     document.getElementById("p").value=total;
+
+
+
+   }
+   </script>
+
+</body>
+</html>

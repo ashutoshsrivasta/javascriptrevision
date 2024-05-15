@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+   p 1 <input id="p1" type="text">
+   q 1 <input id="q1" type="text">
+   p 2<input id="p2" type="text">
+   q 2 <input id="q2" type="text">
+    p 3<input id="p3" type="text">
+    q 3 <input id="q3" type="text">
+    
+    output<input id="output" type="text">
+    
+
+    <input type="button" onclick="f()" value="submit">
+
+    <script>
+        function f(){
+            let p1=document.getElementById("p1").value;
+           let q1= document.getElementById("q1").value;
+           let p2= document.getElementById("p2").value;
+           let q2= document.getElementById("q2").value;
+           let p3= document.getElementById("p3").value;
+           let q3= document.getElementById("q3").value;
+
+           p1=Number(p1);
+           q1=Number(q1);
+           p2=Number(p2);
+           q2=Number(q2);
+           p3=Number(p3);
+           q3=Number(q3);
+
+           let result=p1*q1+p2*q2+p3*q3;
+
+           document.getElementById("output").value=result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   principal <input id="a" type="text"><br>
+    rate<input id="s" type="text"><br>
+    time<input id="p" type="text"><br>
+    output<input id="d" type="text">
+
+    <input id="simple" type="button" onclick="f()" value="simpleinterest">
+    <input id="compound" type="button" onclick="f1()" value="compoundinterest">
+
+    <script>
+        function f(){
+            let x=document.getElementById("a").value;
+            let y=document.getElementById("s").value;
+            let z=document.getElementById("p").value;
+
+
+            principle=Number(x);
+           rate =Number(y);
+            time=Number(z);
+
+             result=principle*rate*time;
+             simpleinterest=principle*rate*time/100;
+
+             document.getElementById("d").value=simpleinterest;
+
+
+
+        }
+          //  yaha se compound interest hai
+
+        function f1(){
+            let x=document.getElementById("a").value;
+            let y=document.getElementById("s").value;
+            let z=document.getElementById("p").value;
+p
+        let  principal =Number(x);
+          let  rate=Number(y);
+          let  time=Number(z);
+// to the power nikalne ke Math.pow formula use karte hai yaha par use kiye hai//
+ 
+             compoundinterest= principal * Math.pow(1+rate/100,time)-principal;
+             document.getElementById("d").value=compoundinterest;
+            }
+    </script>
+</body>
+</html>

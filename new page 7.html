@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="a"></P>
+    <p id="s"></p>
+
+    <input type="button" onclick="f()" value="submit">
+    <script>
+        function f()
+        {
+
+var p=document.getElementById("a");
+var n=p.length;
+for(var i=0;i<=n-1;i++)
+{
+p[i].innerHTML="hello";
+
+
+}
+var p=document.getElementById("s");
+var n=p.length;
+for(var i=0;i<=n-1;i++)
+{
+p[i].innerHTML="how are you";
+
+
+}
+}
+         
+    </script>
+
+</body>
+</html>

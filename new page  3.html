@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    input<input id="a" type="text">
+    input<input id="s" type="text">
+    output<input id="p" type="text">
+    
+    <select id="dropdown" name="options">
+         
+        <option value="0">....</option>
+        <option value="Add">Add 1</option>
+        <option value="Subtract">Subtract 1</option>
+       
+    </select>
+
+       <input type="button" onclick="f()" value="submit">
+
+       <script>
+        function f(){
+            let x=document.getElementById("a").value;
+            let y=document.getElementById("s").value;
+
+            x=Number(x);
+            y=Number(y);
+
+            let total="Not selected";
+
+            let add=document.getElementById("dropdown");
+
+
+
+            if(add.value=="Add"){
+                total=x+y;
+
+
+                
+
+            }
+            else if(add.value=="Subtract")
+                {total=x-y;
+            }
+
+            
+
+            
+          
+            document.getElementById("p").value=total;
+
+            console.log("hi");
+            console.log(add.value);
+
+
+
+
+        }
+       </script>
+</body>
+</html>

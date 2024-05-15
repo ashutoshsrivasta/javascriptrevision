@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First<img id="first1" src="" width="70" height="70">
+    
+   
+    
+
+     <label for="first">first</label><input id="first" type="button" onclick="f('first')" value="first">
+     <label for="second">second</label><input id="second" type="button" onclick="f('second')" value="second">
+
+     <label for="third">third</label><input id="third" type="button" onclick="f('third')" value="third">
+
+
+    <script>
+
+         // function bracket ke andar likha hua word variable hota hai jaisa ki niche hai //
+        // input tag ke type me agar button ka use karte hai toh yaad rahe  function bracket me option likhte hai 
+        // par yeh tab use karte hai jab ek se jyada input tag ke ander button ka use karte hai isko parameter pass karna kehte hai
+       
+        function f(option){
+
+
+            console.log(option);
+
+      
+  //  yaha par function bracket ke undar word ka hi use kiya gaya hai jo ki ek variable hai //
+//   yaha par photo print karaya gaya hai ishi liye result ke jagah document.getElementById("").src=photo ka path diya gaya hai //
+//   agar value print karana hota toh  yaha par ek variable mante hai aur ek id jo mane rehte hai ushi ko niche document.getElementById("").value=jo variable mante hai ushi ko likhte hai //
+
+
+
+     if(option=="first"){
+        console.log("one");
+        document.getElementById("first1").src="number3.jpeg";
+     }
+     else if(option=="second"){
+        console.log("two");
+        document.getElementById("first1").src="number1.jpeg";
+        
+     }
+     else{
+        console.log("three");
+        document.getElementById("first1").src="number2.jpeg";
+        
+
+     }
+     
+
+
+       
+        }
+    </script>
+</body>
+</html>

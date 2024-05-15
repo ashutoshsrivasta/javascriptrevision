@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    F<input id="forenhite" type="text">
+    C<input id="celcius" type="text">
+
+
+    <input type="button" onclick="f()" value="forenhite">
+    
+    <input type="button" onclick="f1()" value="celcius">
+
+
+    <script>
+        function f(){
+var x=document.getElementById("celcius").value;
+var f=(x * 9/5) + 32;
+
+
+
+  document.getElementById("forenhite").value=f;
+
+}
+
+function f1(){
+       var x=document.getElementById("forenhite").value;
+       var f=(x - 32) * 5/9;
+    
+
+         document.getElementById("celcius").value=f;
+
+
+    }
+    </script>
+</body>
+</html>

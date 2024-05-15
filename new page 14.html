@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.f{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    name<input id="name" type="text">
+    roll no<input id="rollno" type="text">
+    phy<input id="phy" type="text">
+    che<input id="che" type="text">
+    math<input id="math" type="text">
+
+    total<input id="total" type="text">
+
+    result<input id="result" type="text">
+   
+    percent<input id="output" type="text">
+
+    division<input id="division" type="text">
+
+    <input type="button" onclick="f()" value="submit">
+
+    <script>
+        function f(){
+// jo value input karna hota hai usko yaha .value karke likhte hai yaad rahe//
+
+            let phy=document.getElementById("phy").value;
+            let che=document.getElementById("che").value;
+            let math=document.getElementById("math").value;
+
+            phy=Number(phy);
+            che=Number(che);
+            math=Number(math);
+            
+            
+            let total=phy+che+math;
+            let percentage=total/3;
+            let result;
+            let division;
+          
+            
+// aur yaha par upar wali value ke hisab se conditon likha gaya hai yaad rahe yaad rahe//
+
+            if(phy<40 || che<40 || math<40){
+            result="fail";
+           }
+           else{
+            result="pass";
+           }
+        //    yeh grater than hai niche dhyan rahe//
+           if(percentage>=60){
+            division="first division";
+            
+           }
+           else if(percentage>=50){
+           division="second division";
+        }
+        else{
+            division="third division";
+        }
+           console.log(document.getElementById("phy").classList);
+
+        //    jo value ouput lena hota hai ya print karana hota hai usko yaha likhte hai aise yaad rahe//
+           
+           document.getElementById("output").value=percentage;
+          document.getElementById("total").value=total;
+           document.getElementById("result").value=result;
+           document.getElementById("division").value=division;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input id="a" type="text">
+<input id="s" type="text">
+
+<input type="button" onclick="f()" value="submit">
+
+
+    <script>
+        function f(){
+       var x=document.getElementById("a").value;
+     var f=(x * 9/5) + 32;
+
+       document.getElementById("s").value=f;
+
+
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    P<input id="p" type="text">
+    R<input id="r" type="text">
+    T<input id="t" type="text">
+   output <input id="d" type="text">
+
+    <input type="button" onclick="f()" value="submit">
+
+
+<script>
+    function f(){
+
+    
+    var p=document.getElementById("p").value;
+
+    var r=document.getElementById("r").value;
+
+    var t=document.getElementById("t").value;
+
+var p=Number(p);
+var r=Number(r);
+var t=Number(t);
+
+result=p*r*t
+simpleinterest=p*r*t/100;
+
+document.getElementById("d").value=simpleinterest;
+
+console.log("result");
+console.log("simpleinterest");
+
+ 
+
+
+}
+</script>
+
+</body>
+</html>

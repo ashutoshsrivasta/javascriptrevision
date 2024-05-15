@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+PHY<input  id="a" type="text">
+CHE<input  id="s" type="text">
+MATH<input id="p"  type="text">
+result<input id="d" type="text">
+
+<div id="e"></div>
+
+<input type="button" onclick="f()" value="submit">
+
+    <script>
+function f(){
+    var x=document.getElementById("a").value;
+    
+    var y=document.getElementById("s").value;
+    
+    var z=document.getElementById("p").value;
+
+    
+
+    
+
+    var x=Number(x);
+    var y=Number(y);
+    var z=Number(z);
+
+    var total=x+y+z;
+
+    let percent=total/3;
+    
+    document.getElementById("d").value=percent;
+
+    // yaha par overall name ka ek variable mana gaya hai kyun ki browser me print karana tha ishliye phir overall ko 
+    // .innerHTML=karke jo value print karana hai rakh diya gaya hai
+    var overall=document.getElementById("e");
+    
+
+    
+    // yeh dono console me dikhane ke liye hai
+   
+    console.log(total); 
+console.log(percent);
+
+
+
+
+if(percent>=95){
+    overall.innerHTML="Grade A";
+
+    }
+    else if(percent>=75){
+        overall.innerHTML="Grade B";
+    }
+    else if(percent>=60){
+        overall.innerHTML="Grade C";
+
+    }
+    else if(percent>=50){
+        overall.innerHTML="Grade D";
+    }
+    else{
+        overall.innerHTML=("please enter correct value");
+    }
+
+
+
+}
+    </script>
+</body>
+</html>

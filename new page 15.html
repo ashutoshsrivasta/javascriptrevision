@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    A<p></p>
+    <br>
+    S<a></a>
+    
+
+    <input type="button" onclick="f()" value="submit">
+
+    <script>
+        function f(){
+            let x=document.getElementsByTagName("p");
+            
+            var n=x.length;
+for(var i=0;i<=n-1;i++)
+{
+x[i].innerHTML="hello";
+
+
+}
+
+
+
+            let y=document.getElementsByTagName("a");
+             var n=y.length;
+             for(var i=0;i<=n-1;i++){
+                y[i].innerHTML="ashutosh";
+             }
+
+        }
+    </script>
+</body>
+</html>

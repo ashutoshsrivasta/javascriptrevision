@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    function outerFunction() {
+        var outerVar = "I am outer variable";
+    
+        function innerFunction() {
+            console.log(outerVar); // Output: "I am outer variable"
+
+            var innervar="I am inner variable"
+            console.log(innervar);
+
+        }
+    
+        innerFunction();
+    }
+    
+    outerFunction();
+
+</script>
+    
+</body>
+</html>
