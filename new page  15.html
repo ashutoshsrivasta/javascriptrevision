@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f{background-color: red;
+
+        }
+        #two{height: 70px;
+        width: 70px;
+
+        }
+    </style>
+</head>
+<body>
+    <input id="one" type="text">
+    <img id="two" src="" >
+    <input type="button" onclick="f()" value="submit">
+    <script>
+        function f(){
+            // yaha par - 0 lagaya gaya hai strin g ko number me badalne ke liye //
+            
+            let x=document.getElementById("one").value-0;
+            console.log(x+x);
+            console.log(typeof x);
+
+            if(x<40){
+                document.getElementById("one").classList.add("f");
+                document.getElementById("two").src="number1.jpeg";
+
+            }
+            else{
+                document.getElementById("one").classList.remove("f");
+            }
+
+
+        }
+    </script>
+</body>
+</html>
