@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="one" type="password" value="submit"><img id="two" src="eye-fill .svg" width="20" height="20" onclick="f()">
+    
+ <!-- yaha par photo par hi onclick laga diya gaya hai button ki jagah ishi liye photo par click karne par hi ho raha hai -->
+    <script>
+        function f(){
+
+            // yaha par password ko change karna hai aur uska attribute type hai ishi liye yaha par .type likha gaya hai //
+            // matlab jo chiz change karna ho uske attribute ko likhte hai yaad rahe //
+
+            // yaad rahe double bracket ke under wali value hamesha rakhte hai let x == me ya jo bhi variable mane raho usme //
+           
+            let x=document.getElementById("one").type;
+
+
+            if(x=="password"){
+                document.getElementById("two").src="eye-fill .svg";
+                document.getElementById("one").type="text";
+                
+            }
+            else{
+                document.getElementById("two").src="eye-slash  (1).svg";
+
+                document.getElementById("one").type="password";
+            }
+        }
+    </script>
+</body>
+</html>

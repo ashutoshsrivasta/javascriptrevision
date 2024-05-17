@@ -14,31 +14,31 @@
     </style>
 </head>
 <body>
-    
     <input id="one" type="text">
     
     <input type="button" onclick="f()" value="submit">
-    <input type="button" onclick="f1()" value="submit">
+    
 
     <script>
+        let count=0;
         function f(){
-            let x=document.getElementById("one").value;
+           
+count++;
+console.log(count);
 
-            if(x<40){
+            if(count %2==0){
                 document.getElementById("one").classList.add("f");
+              
+         
+            }
+            else{
+                document.getElementById("one").classList.remove("f");
             }
            
 
         }
 
-        function f1(){
-            let x=document.getElementById("one").value;
-
-            if(x<40){
-                document.getElementById("one").classList.remove("f");
-            }
-            
-        }
+      
     </script>
 </body>
 </html>
